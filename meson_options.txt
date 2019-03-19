@@ -1,0 +1,18 @@
+
+option(
+    'enable_vorbis',
+    type : 'feature',
+    description : 'Enable OGG Vorbis support',
+)
+
+option(
+    'enable_opus',
+    type : 'feature',
+    description : 'Enable OGG Opus support',
+)
+
+option(
+    'enable_wav',
+    type : 'feature',
+    description : 'Enable WAV support for music (WAV chunks are always supported)',
+)
