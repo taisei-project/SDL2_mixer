@@ -41,6 +41,7 @@ subdir('include')
 libsdl2_mixer = library(meson.project_name(), mixer_sources, mixer_apihdr_copy,
     c_args : mixer_args,
     dependencies : mixer_deps,
+    override_options : ['c_std=none'],
     build_by_default : not meson.is_subproject(),
 )
 
