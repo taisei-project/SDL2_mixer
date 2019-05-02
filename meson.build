@@ -33,7 +33,7 @@ endif
 
 if opus_dep.found()
     mixer_sources += files('music_opus.c')
-    mixer_args += '-DMUSIC_OPUS'
+    mixer_args += ['-DMUSIC_OPUS', '-DOPUS_HEADER=<opusfile.h>']
 endif
 
 subdir('include')
