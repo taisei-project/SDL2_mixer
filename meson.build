@@ -10,7 +10,7 @@ enable_wav = get_option('enable_wav')
 
 sdl2_dep    = dependency('sdl2',        fallback : ['sdl2',     'sdl2_dep'],        required : true)
 vorbis_dep  = dependency('vorbisfile',  fallback : ['vorbis',   'vorbisfile_dep'],  required : enable_vorbis)
-opus_dep    = dependency('opusfile',    fallback : ['opus',     'opusfile_dep'],    required : enable_opus)
+opus_dep    = dependency('opusfile',    fallback : ['opusfile', 'opusfile_dep'],    required : enable_opus)
 
 mixer_deps = [sdl2_dep, vorbis_dep, opus_dep]
 mixer_args = []
